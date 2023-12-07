@@ -52,7 +52,7 @@ A unique identifier number of the post.
 
 Type: String
 
-The type of `like` action. Valid values: **Like**, **Love**, **Empathy**.
+The type of the `like` action. Valid values: **Like**, **Love**, and **Empathy**.
 ## Returns
 Type: Boolean
 
