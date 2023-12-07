@@ -1,34 +1,46 @@
-`logout()`
-Logs off the current user.
+# logout()
+Logs out the current user.
 ## Parameters
 None
 ## Returns
 None
-`getNumberFriends()`
+# getNumberFriends()
 Retrieves the count of friends for the current user.
 ## Parameters
 None
 ## Returns
 Type: Number
-Number of friends for the current user
-`requestFriend(username)`
-Sends a friend request to a user.
+Number of friends belonging to the current user.
+# requestFriend(username)
+Sends a friend request to the specified user.
 ## Parameters
 `username`
 Type: String
 Name of the user to whom the friend request is sent.
 ## Returns
 Type: Boolean
-Values of the request.
-`post(statusUpdate)`
-Used to post a status update. The status update can be up to 1000 characters long. Returns true if the post succeeded and false if the post fails.
+Returns ** true ** if the user accepts the friend request; ** false ** if the user rejects the friend request.
+# post(statusUpdate)
+Posts a status update. 
+The status update can be up to 1000 characters long. Returns whether the `post` succeeded.
 ## Parameters
 `statusUpdate`
-Description
-`like(postId, likeType)`
-Likes a post. The post is specified by the ID, which is an integer. The likeType can have one of these values: "Like", "Love", "Empathy". Returns true if the like succeeded and false if the like fails.
+Type: String
+Status update to post
+## Returns
+Type: Boolean
+Returns ** true ** if the post succeeds; ** false ** if the post fails.
+# like(postId, likeType)
+Likes the specified post. 
+Returns whether the `like` succeeded.
 ## Parameters
 `postId`
-Description
+Type: Number
+A unique identifier number of the post.
 `likeType`
-Description
+Type: String
+The type of `like` action. Valid values: ** Like **, ** Love **, ** Empathy **.
+## Returns
+Type: Boolean
+Returns ** true ** if the `like` succeeds; ** false ** if the `like` fails.
+
