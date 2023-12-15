@@ -1,11 +1,11 @@
 # safeMode(enable)
 Enables or disables the safe mode based on the specified parameter.
 ## Parameters
-**enable**
+`enable`
 
 Type: Boolean
 
-true to enable the safe mode; false to disable safe mode.
+**true** to enable the safe mode; **false** to disable the safe mode.
 ## Returns
 None
 
@@ -16,12 +16,12 @@ None
 ## Returns
 Type: Boolean
 
-true if the user has paid for premium mode; otherwise, false.
+**true** if the user has paid for premium mode; otherwise, **false**.
 
 # setTimeout(timeout)
 Sets the time to wait for a response before timing out.
 ## Parameters
-**timeout**
+`timeout`
 
 Type: Number
 
@@ -32,7 +32,7 @@ None
 # newEvent(calendarId)
 Creates a new event for the specified calendar. 
 ## Parameters
-**calendarId**
+`calendarId`
 
 Type: Number
 
@@ -45,19 +45,19 @@ The ID of the new event.
 # getDirections(latitude, longitude, directionsCallback)
 Returns the directions from the current location to the destination location.
 ## Parameters
-**latitude**
+`latitude`
 
 Type: Number
 
 Latitude of the destination, in degrees
 
-**longitude**
+`longitude`
 
 Type: Number
 
 Longitude of the destination, in degrees
 
-**directionsCallback**
+`directionsCallback`
 
 Type: function
 
@@ -67,7 +67,7 @@ named **directions** that provides guidance on navigating from the current locat
 # createTransaction(amount)
 Creates a new transaction.
 ## Parameters
-**amount**
+`amount`
 
 Type: Number
 
