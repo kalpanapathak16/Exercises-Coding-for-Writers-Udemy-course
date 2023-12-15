@@ -1,3 +1,5 @@
+**Note** : JavaScript lacks enumerations, but you can simulate them using objects.
+
 # Enumeration Example
 
 `const Role = {
