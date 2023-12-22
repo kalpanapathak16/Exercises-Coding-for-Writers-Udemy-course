@@ -9,4 +9,11 @@ This repository contains exercises I tackled during my enrollment in the Udemy c
 3. **JavaScript and HTML**:
    * Built a web page that has a text box for first and last names. After clicking the **Click me** button, it displays the full name. See *JavaScriptAndHtml.html*. 
    * Added a second button that says “Last Name First”. After clicking it, it calls a new function that replaces the fullName paragraph with the last name, a comma, and then the first name. See *JavaScriptAndHtml-second-button.html*.
-4. **Documenting constants**: Documented constants declared in the code (to control a little robotic ball). See *Documenting constants.md*.
+4. **Documenting constants**: Documented constants declared in the code. See *Documenting constants.md*.
+5. **Operators**: Created HTML and JavaScript that uses the following binary number operators:
+   * **+** Adds two numbers. See *Operators-addition*.html.
+   * **-** Substracts two numbers. See *Operators-substraction.html*.
+   * _*_ Multiplies two numbers. See *Operators-multiplication.html*.
+   * **/** Divides two numbers. See *Operators-division.html*.
+   * **%** (Mod operator) Divides two numbers and takes the remainder. See *Operators-mod-operation.html*.
+   * **+** and **/** Add the two numbers together and divide it by 2. See *Operators-average-of-two-numbers.html*.
