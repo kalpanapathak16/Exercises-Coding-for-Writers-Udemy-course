@@ -21,3 +21,4 @@ This repository contains exercises I tackled during my enrollment in the Udemy c
    * **Change Size of Textbox**: Created a program that changes the width of a text box using a function called **setWidth**. See *Functions-change-size-of-the-textbox.html*.
    * **Average two numbers**: Created a function to average two numbers. See *Functions-average-two-numbers.html*.
    * **Length of a name**: Wrote a function to calculate the length of a full name, and then added a button when clicked, it displays the full length. See *Functions-length-of-a-name.html*.
+7. **Documenting functions**: Documented some functions included in a JavaScript SDK for a social network.
