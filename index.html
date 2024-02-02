@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown File Index</title>
+</head>
+<body>
+    <h1>Markdown File Index</h1>
+    <ul id="fileList"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to fetch the list of markdown files
+            function fetchMarkdownFiles() {
+                // Fetch all .md files from the repository
+                // Replace 'path/to/your/repository' with the path to your repository
+                fetch('https://api.github.com/repos/kpathak16/Exercises-Coding-for-Writers-Udemy-course/contents/', {
+                    headers: {
+                        Accept: "application/vnd.github.v3+json"
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const markdownFiles = data.filter(file => file.name.endsWith('.md'));
+                    markdownFiles.forEach(file => {
+                        const listItem = document.createElement('li');
+                        const link = document.createElement('a');
+                        link.href = file.html_url;
+                        link.textContent = file.name;
+                        listItem.appendChild(link);
+                        document.getElementById('fileList').appendChild(listItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching markdown files:', error);
+                });
+            }
+
+            // Call the function to fetch markdown files when the page loads
+            fetchMarkdownFiles();
+        });
+    </script>
+</body>
+</html>
